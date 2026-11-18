@@ -3,7 +3,7 @@ from app import app
 def test_home():
     response = app.test_client().get('/')
     assert response.status_code == 200
-    assert b"Welcome to the DevOps app!" in response.data
+    assert b"Welcome to the Production app!" in response.data
 
 def test_health():
     response = app.test_client().get('/health')
